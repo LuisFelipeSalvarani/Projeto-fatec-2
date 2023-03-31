@@ -1,4 +1,4 @@
-nav{
+.navbar{
     margin: 0;
     padding: 0;
 }
@@ -10,7 +10,7 @@ nav{
     gap: 0.7em;
 }
 
-nav button{
+.navbar button{
     background-color: transparent;
     border: none;
     font-size: 3em;
@@ -20,22 +20,22 @@ nav button{
     
 }
 
-nav button:hover{
+.navbar button:hover{
     color: #323d42;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-nav button:focus{
-    margin-right: 6vw;
+.navbar button:focus{
+    margin-right: 5vw;
     color: #ad0f0a;
 }
 
-nav button:focus ~ ul{
+.navbar button:focus ~ ul{
     height: 8em;
 }
 
-ul{
+.navbar ul{
     position: absolute;
     right: 0vw;
     top: 12.3vh;
