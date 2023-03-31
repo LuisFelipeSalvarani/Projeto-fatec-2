@@ -1,6 +1,6 @@
 .home_cadastro {
     width: 100%;
-    height: 100%;
+    height: auto;
     background-image: linear-gradient(#8baab6, #43545c);
     display: flex;
     align-items: center;
@@ -17,6 +17,7 @@
     gap: 1em;
     border-radius: 30px;
     padding: 1.5em;
+    margin: 2em 0;
     box-shadow: 1px 1px 25px;
 }
 
@@ -24,6 +25,10 @@
     display: flex;
     flex-direction: column;
     gap: 1.5em;
+}
+
+.cadastro_box span{
+    color: #ad0f0a;
 }
 
 .cadastro_box form div {
@@ -59,4 +64,54 @@
     border-color: #43545c;
     transition: 0.5s;
     color: #43545c;
+}
+
+.cadastro_box button {
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 2em;
+}
+
+.cadastro_box button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ad0f0a;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.cadastro_box button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #800e0a;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.cadastro_box button:hover {
+    color: #fff;
+}
+
+.cadastro_box button:hover:before {
+    width: 100%;
 }

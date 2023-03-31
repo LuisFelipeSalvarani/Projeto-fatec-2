@@ -10,7 +10,7 @@ nav{
     gap: 0.7em;
 }
 
-button{
+nav button{
     background-color: transparent;
     border: none;
     font-size: 3em;
@@ -19,18 +19,19 @@ button{
     margin-right: 2vw;
     
 }
-button:hover{
+
+nav button:hover{
     color: #323d42;
     transform: scale(1.1);
     cursor: pointer;
 }
 
-button:focus{
+nav button:focus{
     margin-right: 6vw;
     color: #ad0f0a;
 }
 
-button:focus ~ ul{
+nav button:focus ~ ul{
     height: 8em;
 }
 
