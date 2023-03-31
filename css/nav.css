@@ -1,0 +1,64 @@
+nav{
+    margin: 0;
+    padding: 0;
+}
+.nav_menu{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 0.7em;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 3em;
+    color: #43545c;
+    transition: all .3s ease-in-out;
+    margin-right: 2vw;
+    
+}
+button:hover{
+    color: #323d42;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button:focus{
+    margin-right: 6vw;
+    color: #ad0f0a;
+}
+
+button:focus ~ ul{
+    height: 8em;
+}
+
+ul{
+    position: absolute;
+    right: 0vw;
+    top: 12.3vh;
+    background-color: #ad0f0a;
+    width: 15vw;
+    height: 0;
+    border-radius: 0px 0px 10px 10px;
+    font-size: 1.5em;
+    overflow: hidden;
+    transition: all .6s ease-in-out;
+}
+
+.fa-arrow-right-to-bracket{
+    margin-left: 0.3em;
+}
+
+.nav_menu li{
+    margin-top: 0.7em;
+}
+
+.nav_menu li a{
+    color: #fff;
+}
+
+.nav_menu li a:hover{
+    color: #b1a7a7;
+}
